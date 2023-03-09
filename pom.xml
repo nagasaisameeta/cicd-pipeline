@@ -17,6 +17,20 @@
     <maven.compiler.source>1.7</maven.compiler.source>
     <maven.compiler.target>1.7</maven.compiler.target>
   </properties>
+  
+  <distributionManagement>
+        <repository>
+                <id>saidemo</id>
+                <url>http://35.175.176.251:8081/repository/saidemo/</url>
+                <layout>default</layout>
+            <releases>
+                <enabled>true</enabled>
+                <updatePolicy>always</updatePolicy>
+                <checksumPolicy>warn</checksumPolicy>
+            </releases>
+         </repository>
+</distributionManagement>
+
 
   <dependencies>
     <dependency>
